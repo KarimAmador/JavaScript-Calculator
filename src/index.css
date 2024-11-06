@@ -1,0 +1,81 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #444;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App {
+  position: relative;
+  padding: 10px 5px 5px;
+  background-color: rgb(32, 32, 32);
+  color: #fff;
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+#display {
+  font-size: 3rem;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.2rem;
+  margin-top: 2rem;
+}
+
+button {
+  font-weight: bold;
+  font-size: 2rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(59, 59, 59);
+  color: #fff;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+button:active {
+  background-color: rgb(40, 40, 40);
+}
+
+.operator:hover {
+  background-color: rgb(59, 59, 59);
+}
+
+.operator:active {
+  background-color: rgb(50, 50, 50);
+}
+
+.wide {
+  width: 20.2rem;
+  grid-column: span 2;
+}
+
+.vertical {
+  height: 20.2rem;
+  grid-row: span 2;
+}
+
+.operator {
+  background-color: rgb(50, 50, 50);
+}
